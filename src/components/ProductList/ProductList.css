@@ -1,0 +1,55 @@
+.product-grid-container {
+  background: white;
+  margin-top: 10px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.product-list-header {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px; /* Flipkart uses 1px gap with gray background to create grid lines */
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem;
+  background: white;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  background: white;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

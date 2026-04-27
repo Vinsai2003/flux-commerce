@@ -1,0 +1,51 @@
+.home-page {
+  padding-bottom: 2rem;
+}
+
+.hero-section {
+  display: none; /* Flipkart style usually starts with banners, but for this clone we'll keep it simple or use a white banner */
+}
+
+.filter-section {
+  background: white;
+  margin-top: 10px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  color: #212121;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+
+.filter-btn:hover {
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.home-content {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    gap: 15px;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+}

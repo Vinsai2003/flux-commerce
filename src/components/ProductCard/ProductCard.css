@@ -1,0 +1,129 @@
+.product-card {
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
+}
+
+.product-image {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.wishlist-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 5;
+  color: #c2c2c2;
+}
+
+.wishlist-toggle.active {
+  color: var(--primary);
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.product-overlay {
+  display: none; /* Flipkart doesn't use overlays like this */
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  margin-bottom: 5px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.product-category {
+  color: #388e3c; /* Flipkart often uses green for some text */
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-rating {
+  background: var(--rating-green);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+
+.rating-count {
+  color: #878787;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.product-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background: #ff9f00;
+  color: white;
+  height: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.add-to-cart-btn:hover {
+  background: #f39700;
+}
+
+.add-to-cart-btn.success {
+  background: #fb641b;
+}

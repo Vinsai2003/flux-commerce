@@ -1,0 +1,83 @@
+.checkout-page {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.checkout-page h1 {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.checkout-section {
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.checkout-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary);
+}
+
+.form-group.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Sidebar styles removed to CheckoutSummary.css */
+
+.success-container {
+  text-align: center;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.success-container h1 {
+  font-size: 2.5rem;
+}
+
+.success-container p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}

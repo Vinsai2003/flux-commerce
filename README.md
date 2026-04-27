@@ -1,43 +1,121 @@
-# FluxCommerce - Premium E-commerce Application
+# FluxCommerce - Premium E-commerce Capstone Project
 
-FluxCommerce is a state-of-the-art e-commerce frontend application built with React. It features a modern, responsive design with glassmorphism aesthetics, seamless state management, and real-time integration with the FakeStoreAPI.
+FluxCommerce is a high-performance, production-ready e-commerce platform built as a Capstone Project for Frontend Development. It features a modern, mobile-first design, complex state management, and real-time API integration.
 
-## 🚀 Live Demo
-[Deployment Link will be here]
+![FluxCommerce Preview](./flux_ecommerce_preview.png)
 
-## ✨ Features
-- **Dynamic Product Catalog**: Browse products with real-time filtering by categories.
-- **Interactive Product Details**: Deep dive into product information with high-quality images and rating systems.
-- **Advanced Shopping Cart**: Persistent cart management with quantity controls and real-time total calculation.
-- **Secure Auth Simulation**: User authentication flow with persistent login states using Local Storage.
-- **Premium Checkout Experience**: Multi-step simulated checkout process with form validation.
-- **Modern UI/UX**: Glassmorphism design, smooth transitions, and responsive layouts for all devices.
-- **Performance Optimized**: Code splitting and lazy loading for lightning-fast initial load.
+## 📖 Table of Contents
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Architecture & Design](#architecture--design)
+- [Performance Optimization](#performance-optimization)
+- [Deployment](#deployment)
+- [Author](#author)
+
+## 🌟 Project Overview
+The goal of this project was to build a comprehensive e-commerce frontend that simulates a real-world marketplace. It addresses core frontend challenges including dynamic routing, global state synchronization, and professional UI/UX design.
+
+## ✨ Key Features
+- **🛒 Dynamic Shopping**: Full catalog with category filtering and persistent shopping cart.
+- **🔐 Secure Auth Simulation**: User authentication with protected routes and persistent login.
+- **💖 Wishlist System**: Save favorite items for later with one-click cart transfer.
+- **💳 Checkout Workflow**: Multi-step checkout with form validation and order summary.
+- **📱 Responsive UI**: Premium glassmorphic design optimized for all screen sizes.
+- **📦 Order History**: Track past purchases and manage user addresses.
 
 ## 🛠️ Tech Stack
-- **Frontend**: React (Vite)
-- **Routing**: React Router 6
-- **State Management**: React Context API
+- **Frontend**: React 19 (Vite)
+- **Routing**: React Router 7
+- **State Management**: Context API (Auth, Cart, Wishlist)
+- **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **API**: [FakeStoreAPI](https://fakestoreapi.com/)
-- **Styling**: Vanilla CSS (Modern Design System)
+- **API**: FakeStoreAPI
+- **Styling**: Vanilla CSS with Modern Design Tokens
 
 ## 📁 Project Structure
+The project follows a modular, industry-standard directory structure:
 ```text
 src/
-├── components/       # Reusable UI components
-├── contexts/         # State management (Auth, Cart)
-├── hooks/            # Custom utility hooks
-├── pages/            # Main application pages
-├── services/         # API integration logic
-└── styles/           # Global styles and design system
+├── components/       # Reusable UI components (Navbar, Card, etc.)
+├── contexts/         # Global state logic (Auth, Cart, Wishlist)
+├── hooks/            # Custom hooks for business logic
+├── pages/            # Full-page view components
+├── services/         # API integration layer
+├── styles/           # Global theme and CSS variables
+└── App.jsx           # Main application entry and routing
 ```
 
-## 📦 Getting Started
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start development server: `npm run dev`
-4. Build for production: `npm run build`
+## 📁 GitHub Structure
+The repository is organized according to the Capstone submission standards:
+```text
+src/
+├── components/
+│   ├── Navbar/
+│   ├── ProductList/
+│   ├── ProductCard/
+│   ├── Cart/
+│   └── Checkout/
+├── pages/
+│   ├── Home.jsx
+│   ├── ProductDetail.jsx
+│   ├── CartPage.jsx
+│   └── CheckoutPage.jsx
+├── contexts/
+│   ├── CartContext.jsx
+│   └── AuthContext.jsx
+├── hooks/
+│   └── useProducts.js
+├── services/
+│   └── api.js
+├── styles/
+├── public/
+├── package.json
+└── README.md
+```
+
+## 📦 Setup Instructions
+To run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Vinsai2003/Flux-Commerce-.git
+   ```
+2. **Navigate to project folder**
+   ```bash
+   cd Flux-Commerce-
+   ```
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🏗️ Architecture & Design
+- **Component-Based**: Highly modularized components for reusability.
+- **State Management**: Uses the React Context API to avoid prop drilling while maintaining a clean data flow.
+- **Protected Routes**: Custom authentication middleware to secure the checkout and profile pages.
+
+## ⚡ Performance Optimization
+- **Code Splitting**: Lazy loading implemented for all routes to minimize initial load time.
+- **Asset Management**: Optimized images and icons for faster rendering.
+- **State Efficiency**: Optimized context providers to prevent unnecessary re-renders.
+
+## 🚀 Deployment
+This project is optimized for deployment on **Netlify** or **Vercel**.
+- **Live Link**: [Deployment Link will be here]
 
 ## 👨‍💻 Author
-[Your Name]
+**[Your Name]** - *Lead Developer*
+
+---
+*Developed as part of the Frontend Mastery Capstone.*

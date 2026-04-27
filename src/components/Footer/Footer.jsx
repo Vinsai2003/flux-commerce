@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { MessageCircle, X, Camera, Video, Mail, Phone, MapPin } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -31,10 +31,10 @@ const Footer = () => {
         <div className="footer-section social">
           <h3>SOCIAL</h3>
           <div className="social-icons">
-            <Facebook size={20} />
-            <Twitter size={20} />
-            <Instagram size={20} />
-            <Youtube size={20} />
+            <MessageCircle size={20} />
+            <X size={20} />
+            <Camera size={20} />
+            <Video size={20} />
           </div>
         </div>
         <div className="footer-divider-vertical"></div>

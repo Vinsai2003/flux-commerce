@@ -85,7 +85,7 @@ To run this project locally:
    ```
 2. **Navigate to project folder**
    ```bash
-   cd Flux-Commerce-
+   cd flux-commerce
    ```
 3. **Install dependencies**
    ```bash

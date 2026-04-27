@@ -81,7 +81,7 @@ To run this project locally:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Vinsai2003/Flux-Commerce-.git
+   git clone https://github.com/Vinsai2003/Flux-Commerce-
    ```
 2. **Navigate to project folder**
    ```bash
@@ -111,11 +111,11 @@ To run this project locally:
 - **State Efficiency**: Optimized context providers to prevent unnecessary re-renders.
 
 ## 🚀 Deployment
-This project is optimized for deployment on **Netlify** or **Vercel**.
-- **Live Link**: [Deployment Link will be here]
+This project is optimized for deployment on **Vercel**.
+- **Live Link**: [[Deployment Link will be here](https://flux-commerce-three.vercel.app/)]
 
 ## 👨‍💻 Author
-**[Your Name]** - *Lead Developer*
+**[Vinsai Nerella]** - *Lead Developer*
 
 ---
 *Developed as part of the Frontend Mastery Capstone.*

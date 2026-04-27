@@ -1,16 +1,17 @@
 :root {
-  --primary: #2874f0;       /* Flipkart Blue */
-  --secondary: #ff9f00;     /* Flipkart Yellow */
-  --accent: #fb641b;        /* Flipkart Orange */
+  --primary: #2874f0;
+  --secondary: #ff9f00;
+  --accent: #fb641b;
   --rating-green: #388e3c;
-  --bg-primary: #f1f3f6;    /* Flipkart Light Gray Background */
+  --bg-primary: #f1f3f6;
   --bg-secondary: #ffffff;
   --text-primary: #212121;
   --text-secondary: #878787;
   --border-color: #f0f0f0;
   --shadow: 0 1px 2px 0 rgba(0,0,0,.1);
-  --radius: 2px;            /* Flipkart uses very small radius */
-  --transition: all 0.2s ease;
+  --shadow-lg: 0 4px 12px 0 rgba(0,0,0,0.15);
+  --radius: 2px;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -19,12 +20,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 14px; /* Mobile base font size */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; /* Desktop base font size */
+  }
+}
+
 body {
   font-family: 'Roboto', 'Outfit', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,6 +50,7 @@ button {
   border: none;
   outline: none;
   transition: var(--transition);
+  font-family: inherit;
 }
 
 ul {
@@ -46,18 +60,54 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .container {
+  width: 100%;
   max-width: 1248px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 /* Common Section Wrapper */
 .section-white {
   background: #fff;
-  padding: 1rem;
-  margin-bottom: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
   box-shadow: var(--shadow);
+}
+
+@media (min-width: 768px) {
+  .section-white {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Utility Classes */
+.hide-mobile {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: flex !important;
+  }
+}
+
+.show-mobile {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  .show-mobile {
+    display: none !important;
+  }
 }

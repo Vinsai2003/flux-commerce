@@ -2,82 +2,144 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 120px);
   background: #f1f3f6;
-  padding: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .login-page {
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+  }
 }
 
 .login-card {
   width: 100%;
-  max-width: 750px;
+  max-width: 450px;
   background: white;
   display: flex;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
-  min-height: 520px;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-height: auto;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .login-card {
+    max-width: 750px;
+    flex-direction: row;
+    min-height: 520px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
+  }
 }
 
 .login-sidebar {
   background: var(--primary);
-  width: 40%;
-  padding: 40px 33px;
+  width: 100%;
+  padding: 24px 20px;
   color: white;
   display: flex;
   flex-direction: column;
-  position: relative;
+}
+
+@media (min-width: 768px) {
+  .login-sidebar {
+    width: 40%;
+    padding: 40px 33px;
+  }
 }
 
 .login-sidebar h1 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .login-sidebar h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 }
 
 .login-sidebar p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   color: #dbdbdb;
 }
 
+@media (min-width: 768px) {
+  .login-sidebar p {
+    font-size: 18px;
+  }
+}
+
 .sidebar-image {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar-image {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
 }
 
 .login-form-container {
   flex: 1;
-  padding: 40px 35px 16px;
+  padding: 24px 20px 16px;
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .login-form-container {
+    padding: 40px 35px 16px;
+  }
+}
+
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .input-group {
+    margin-bottom: 20px;
+  }
 }
 
 .input-group input {
   width: 100%;
   border: none;
   outline: none;
-  padding: 12px 0;
-  font-size: 16px;
+  padding: 10px 0;
+  font-size: 14px;
   background: transparent;
   transition: var(--transition);
 }
 
-.input-group input:focus {
-  padding-top: 8px;
-  padding-bottom: 16px;
+@media (min-width: 768px) {
+  .input-group input {
+    padding: 12px 0;
+    font-size: 16px;
+  }
 }
 
 .terms-text {
-  font-size: 12px;
+  font-size: 11px;
   color: #878787;
   margin: 10px 0 20px;
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .terms-text {
+    font-size: 12px;
+  }
 }
 
 .blue-txt {
@@ -89,13 +151,20 @@
 .login-submit-btn {
   background: #fb641b;
   color: white;
-  padding: 14px;
+  padding: 12px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
   width: 100%;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .login-submit-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
 }
 
 .login-submit-btn:hover {
@@ -105,29 +174,15 @@
 .error-text {
   color: #ef4444;
   font-size: 12px;
-  margin-top: -15px;
-  margin-bottom: 15px;
+  margin-top: -12px;
+  margin-bottom: 12px;
   font-weight: 500;
-}
-
-.otp-info {
-  font-size: 14px;
-  color: #212121;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-.change-btn {
-  color: var(--primary);
-  font-weight: 600;
-  margin-left: 10px;
-  cursor: pointer;
 }
 
 .resend-text {
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 16px;
+  font-size: 13px;
   color: #878787;
 }
 
@@ -143,19 +198,4 @@
 
 .login-footer:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .login-card {
-    flex-direction: column;
-    max-width: 450px;
-  }
-  .login-sidebar {
-    width: 100%;
-    min-height: 150px;
-    padding: 30px;
-  }
-  .sidebar-image {
-    display: none;
-  }
 }

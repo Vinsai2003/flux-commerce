@@ -3,18 +3,48 @@
 }
 
 .hero-section {
-  display: none; /* Flipkart style usually starts with banners, but for this clone we'll keep it simple or use a white banner */
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    display: block;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+  }
+  
+  .hero-content {
+    padding: 40px 20px;
+    text-align: center;
+  }
 }
 
 .filter-section {
   background: white;
-  margin-top: 10px;
-  padding: 12px 20px;
+  margin-top: 0;
+  padding: 10px;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 15px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   box-shadow: var(--shadow);
   border-bottom: 1px solid var(--border-color);
+  scrollbar-width: none; /* Firefox */
+}
+
+.filter-section::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+@media (min-width: 768px) {
+  .filter-section {
+    padding: 12px 20px;
+    gap: 30px;
+    justify-content: center;
+    overflow-x: visible;
+    margin-top: 10px;
+  }
 }
 
 .filter-btn {
@@ -22,11 +52,20 @@
   border: none;
   font-weight: 500;
   color: #212121;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
-  padding: 5px 0;
+  padding: 8px 12px;
+  white-space: nowrap;
   border-bottom: 2px solid transparent;
   border-radius: 0;
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  .filter-btn {
+    font-size: 14px;
+    padding: 5px 0;
+  }
 }
 
 .filter-btn:hover {
@@ -39,13 +78,11 @@
 }
 
 .home-content {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
-@media (max-width: 768px) {
-  .filter-section {
-    gap: 15px;
-    overflow-x: auto;
-    justify-content: flex-start;
+@media (min-width: 768px) {
+  .home-content {
+    margin-top: 10px;
   }
 }

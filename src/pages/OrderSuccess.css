@@ -1,64 +1,111 @@
 .order-success-page {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .order-success-page {
+    padding-top: 50px;
+  }
 }
 
 .success-card {
   max-width: 600px;
   width: 100%;
   text-align: center;
-  padding: 50px 30px;
+  padding: 30px 16px;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 768px) {
+  .success-card {
+    padding: 50px 30px;
+  }
 }
 
 .success-icon {
   margin-bottom: 20px;
+  color: var(--rating-green);
 }
 
 .order-success-page h1 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #212121;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .order-success-page h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 }
 
 .order-id {
-  font-size: 16px;
+  font-size: 14px;
   color: #878787;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .order-id {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
 
 .success-msg {
   color: #212121;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .success-msg {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
 }
 
 .success-actions {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .success-actions {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+.view-orders-btn, .continue-btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .view-orders-btn, .continue-btn {
+    width: auto;
+  }
 }
 
 .view-orders-btn {
   background: var(--primary);
   color: white;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 2px;
 }
 
 .continue-btn {
   background: #fb641b;
   color: white;
-  padding: 12px 30px;
-  font-weight: 600;
-  border-radius: 2px;
-}
-
-@media (max-width: 768px) {
-  .success-actions {
-    flex-direction: column;
-  }
 }

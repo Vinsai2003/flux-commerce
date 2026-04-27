@@ -81,7 +81,7 @@ To run this project locally:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Vinsai2003/Flux-Commerce-
+   git clone https://github.com/Vinsai2003/flux-commerce-
    ```
 2. **Navigate to project folder**
    ```bash
